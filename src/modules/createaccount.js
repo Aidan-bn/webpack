@@ -13,8 +13,14 @@ const CreateAccount = React.createClass({
                 <label htmlFor='password'>Confirm Password: 
                 <input type='text' id='confpassword' />
                 </label>
-                <button id='signIn' onClick={this.props.onAuthComplete.bind(null, this._createAccount)}>CreateAccount</button>
+                <button id='signIn' onClick={this.props.onAuthComplete.bind(null, 
+                    this._createAccount)}>CreateAccount</button>
             </div>
-        )
+        );
+    },
+    _createAccount: function(){
+        // do creation logic
+        return true;
     }
-})
+});
+module.exports = CreateAccount;
